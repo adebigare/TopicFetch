@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+
+  "name": "Topic Fetch",
+  "description": "This extension extracts the meta keywords from a news article and give you related articles from Google News",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup" : "popup.html",
+    "default_title" : "Get Related Links"
+  },
+
+    "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+
+  "permissions": [
+    "tabs",
+    "<all_urls>",
+    "activeTab"
+  ]
+
+}
